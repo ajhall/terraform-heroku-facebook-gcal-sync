@@ -40,7 +40,6 @@ resource heroku_build build {
   app = heroku_app.app.id
 
   source = {
-    url     = "https://github.com/amancevice/terraform-heroku-facebook-gcal-sync/archive/${var.app_version}.tar.gz"
-    version = var.app_version
+    url     = "https://github.com/ajhall/terraform-heroku-facebook-gcal-sync/tarball/master"
   }
 }

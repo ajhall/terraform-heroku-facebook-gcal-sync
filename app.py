@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+from pprint import pprint
 
 import facebook
 from google.oauth2 import service_account
@@ -69,4 +70,9 @@ def event_time(time):
 
 
 if __name__ == '__main__':
-    print(json.loads(main()))
+    modified_objects = main()
+
+    if len(modified_objects["POST"]) > 0 or len(modified_objects["PUT"]) > 0 or len(modified_objects["DELETE"]) > 0:
+        pprint(modified_objects)
+    else:
+        print("No changes were necessary.")

@@ -9,3 +9,5 @@ fest = "*"
 [dev-packages]
 ipdb = "*"
 ipython = "*"
+pylint = "*"
+autopep8 = "*"
