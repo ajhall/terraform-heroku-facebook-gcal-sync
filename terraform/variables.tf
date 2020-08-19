@@ -18,11 +18,6 @@ variable app_stack {
   default     = "heroku-18"
 }
 
-variable app_version {
-  description = "Version of module"
-  default     = "0.1.0"
-}
-
 variable facebook_page_id {
   description = "facebook page ID"
 }
